@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+.container {
+  max-width: 1140px; /* atur lebar maksimum */
+  margin: 0 auto; /* pusatkan elemen */
+  padding: 0 20px; /* tambahkan padding pada kiri dan kanan */
+}
+
+
+/*Navigation Bar*/
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* untuk menempatkan navbar di atas konten lainnya */
+}
+
+.logo {
+  color: green;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.menu li a:hover {
+  color: lightgreen;
+}
+
+
+#cta-signup{
+    padding:  5px 10px;
+    background-color: lightgreen;
+    color: #black;
+    font-weight: 500;
+    transition: all 300ms ease;
+    border: 1px solid black;
+}
+
+#cta-signup:hover{
+    background-color: green;
+    
+}
+
+/*End of Navigaton Bar*/
+
+/*Hero*/
+
+.hero {
+  background-image: url('img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  background-color: green;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none; /* menghilangkan border pada link */
+  cursor: pointer; /* mengubah kursor menjadi tangan saat di hover */
+  transition: all 300ms ease;
+}
+
+.button:hover{
+  background-color: darkgreen;
+}
+/*End of Hero*/
+
+/*About*/
+.about-title {
+  font-size: 36px;
+  color: green;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.about-flex{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-p p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.about-p p span{
+  font-weight: bold;
+  color: darkgreen;
+}
+
+.about-img{
+  height: 300px;
+  width: 350px;
+  margin-left: 90px;
+}
+/*End of About*/
+
+/*Statistik*/
+.statistics{
+  margin-top: 50px;
+  background-color: limegreen;
+}
+
+.stats-title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: white;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  text-align: center;
+  width: calc(33.33% - 20px);
+  margin-bottom: 60px;
+  padding: 30px 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box h3 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.stat-box p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/*End of Statistik*/
+
+/*Program*/
+/* Container untuk carousel */
+.card-carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+/* Styling untuk setiap card dalam carousel */
+.card-carousel .card {
+  flex-basis: 300px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+}
+
+.card-carousel .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-carousel .card .card-body {
+  padding: 10px;
+}
+
+.card-carousel .card .card-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.card-carousel .card .card-text {
+  margin: 10px 0;
+}
+
+.card-carousel .card .card-link {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/*End of Programs*/
+
+/*Contact*/
+.contact{
+    background-color: limegreen;
+    padding-bottom: 70px;
+}
+
+.section-title-contact{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: white;
+}
+
+.contact-hr{
+    width: 250px;
+    margin: 0 auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+form label{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+input[type=text], input[type=email], textarea{
+    padding: 20px;
+    margin: 10px 0;
+    border: none;
+    transition: 300ms ease;
+}
+
+textarea{
+    height: 200px;
+}
+
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+    outline: none;
+    background-color: #f1f1f1;
+}
+
+
+input[type=submit]{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    font-weight: 700;
+    box-shadow: 0 5px black;
+    position: relative;
+    transition: background-color 200ms ease;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(228, 225, 225);
+}
+
+input[type=submit]:active{
+    outline: none;
+    top: 5px;
+    box-shadow: none;
+}
+/*End of Contact*/
+
+/*Footer*/
+footer {
+  background-color: #1F1F1F;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-footer{
+  font-size: 28px;
+  font-weight: 700;
+  color: green;
+  margin-top: -8px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.footer-links a:hover {
+  color: lightgreen;
+}
+
+.social-media ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media li {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.social-media a:hover {
+  color: lightgreen;
+}
+
+.subscribe form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.subscribe button[type="submit"] {
+  background-color: lightgreen;
+  color: #1f1f1f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.subscribe button[type="submit"]:hover {
+  background-color: darkgreen;
+  color: black;
+}
+
+.penulis{
+    font-size: 16px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.penulis a{
+    color: limegreen;
+}
+/*End of Footer*/
